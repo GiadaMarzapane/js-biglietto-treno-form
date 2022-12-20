@@ -18,20 +18,20 @@ body{
     align-items: center;
 }
 
-.center{
-    justify-content: center;
+.space-between{
+    justify-content: space-between;
 }
 
 .space-around{
     justify-content: space-around;
 }
 
-.margin-bottom{
-    margin-bottom: 20px;
-}
-
 .margin-bottom5 {
     margin-bottom: 5px;
+}
+
+.margin-bottom{
+    margin-bottom: 20px;
 }
 
 .text-center{

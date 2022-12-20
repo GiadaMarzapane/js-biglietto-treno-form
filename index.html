@@ -23,7 +23,7 @@
             <section class="margin-bottom">
                 <div class="flex space-around">
                     <div class="margin-bottom text-center">
-                        <label for="name-surname" class="margin-bottom5">Nome e Cognome</label>
+                        <label for="name-surname" class="margin-bottom5">Nome e Cognome:</label>
                         <input class="text-center" type="text" id="name-surname" placeholder="nome e cognome" required>
                     </div>
                     <div class="margin-bottom text-center">
@@ -31,8 +31,13 @@
                         <input class="text-center" type="number" id="my-km" placeholder="km da percorrere" required>
                     </div>
                     <div class="margin-bottom text-center">
-                        <label for="my-age" class="margin-bottom5">Quanti anni hai?</label>
-                        <input class="text-center" type="text" id="my-age" placeholder="la tua età" required>
+                        <label for="my-age" class="margin-bottom5">Indica la tua fascia di età:</label>
+                        <select name="choice" id="my-age">
+                            <option value="young">Minorenne</option>
+                            <option value="over">Over 65</option>
+                            <option value="adult">Adulto</option>
+                        </select>
+                        <!-- <input class="text-center" type="text" id="my-age" placeholder="la tua età" required> -->
                     </div>
                 </div>
                 <div class="text-center">
@@ -49,37 +54,41 @@
             </h2>
             <section>
                 <h3 class="margin-bottom">Dettagli passeggero:</h3>
-                <div id="passenger-details" class="flex space-around">
+                <div id="passenger-details" class="flex space-between">
                     <div>
-                        <h4>
+                        <h4 class="margin-bottom5">
                             <i class="fa-solid fa-user-check"></i>
                             Nome passeggero
                         </h4>
-                        
+                        <p id="passenger-name"></p>
                     </div>
                     <div>
-                        <h5>
+                        <h5 class="margin-bottom">
                             <i class="fa-solid fa-circle-exclamation"></i>
                             Offerta                            
                         </h5>
+                        <p id="offer-type"></p>
                     </div>
                     <div>
-                        <h5>
+                        <h5 class="margin-bottom">
                             <i class="fa-solid fa-train"></i>
                             Carrozza
                         </h5>
+                        <p id="wagon"></p>
                     </div>
                     <div>
-                        <h5>
+                        <h5 class="margin-bottom">
                             <i class="fa-solid fa-ticket"></i>
                             Codice Biglietto
                         </h5>
+                        <p id="ticket-code"></p>
                     </div>
                     <div>
-                        <h5>
+                        <h5 class="margin-bottom">
                             <i class="fa-solid fa-sack-dollar"></i>
                             Costo Biglietto
                         </h5>
+                        <p id="my-price"></p>
                     </div>
                 </div>
             </section>
