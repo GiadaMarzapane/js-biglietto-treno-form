@@ -8,7 +8,7 @@ submitButton.addEventListener('click',
     function(){
         console.log('click sul button submit');
         console.log("L'utente si chiama: ", myNameSurname.value);
-        console.log('I km da percorrere sono: ', typeof myKm, myKm.value);
+        console.log('I km da percorrere sono: ', myKm.value);
         console.log("L'utente ha: ", myAge.value, ' anni');
         let basePrice = myKm.value * 0.21;
         basePrice = basePrice.toFixed(2);
