@@ -22,6 +22,8 @@ submitButton.addEventListener('click',
         wagonNumber.innerHTML = randomWagonNumber;
         let randomTicketCodeNumber = Math.floor((Math.random() * 10000) + 90000);
         ticketCodeNumber.innerHTML = randomTicketCodeNumber;
+        document.querySelector('section.display-none').style.display = 'block';
+        document.querySelector('h2.display-none').style.display = 'block';
 
         if (myAge.value == 'young'){
             let discountPrice20 = (basePrice - (basePrice * 0.20)).toFixed(2);

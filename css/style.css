@@ -15,7 +15,6 @@ body{
 
 .flex{
     display: flex;
-    align-items: center;
 }
 
 .space-between{
@@ -36,6 +35,10 @@ body{
 
 .text-center{
     text-align: center;
+}
+
+.display-none{
+    display: none;
 }
 
 *::placeholder{
